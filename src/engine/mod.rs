@@ -305,7 +305,7 @@ impl SimulationEngine {
         };
         
         // 尝试分配内存
-        if let Some(_block) = allocator.allocate(memory_size) {
+        if let Some(block) = allocator.allocate(memory_size) {
             // 分配成功
             self.active_requests += 1;
             self.metrics.record_allocation(true, memory_size);
@@ -313,11 +313,12 @@ impl SimulationEngine {
             // 计算请求生命周期
             let lifetime = workload.generate_lifetime();
             
-            // 添加内存释放事件
+            // 添加内存释放事件 — 使用 allocator 返回的 block.id 作为释放 key，
+            // 而非 workload 的 request_id。因为当部分分配失败时，二者不再一致。
             let deallocation_event = Event {
                 time: self.current_time + lifetime,
                 event_type: EventType::MemoryDeallocation,
-                request_id: Some(request_id),
+                request_id: Some(block.id),
                 data: Some(EventData::MemorySize(memory_size)),
             };
             self.add_event(deallocation_event);

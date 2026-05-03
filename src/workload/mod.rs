@@ -58,10 +58,10 @@ pub struct Request {
 /// ```rust
 /// use sim_mem_rs::workload::WorkloadGenerator;
 /// 
-///  //创建生成器：100个请求，平均生命周期50，平均内存大小10
+// 创建生成器：100个请求，平均生命周期50，平均内存大小10
 /// let mut generator = WorkloadGenerator::new(100, 50, 10);
 /// 
-/// // 生成请求（传入足够大的时间以触发请求生成）
+// 生成请求（传入足够大的时间以触发请求生成）
 /// let request = generator.next_request(1000).unwrap();
 /// println!("请求 {} 到达时间 {} 需要 {} 内存", 
 ///          request.id, request.arrival_time, request.memory_size);

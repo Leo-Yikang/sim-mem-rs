@@ -49,16 +49,16 @@ enum PageStatus {
 /// ```rust
 /// use sim_mem_rs::memory::{PagedAllocator, Allocator};
 /// 
-/// // 创建页大小为64单位的分配器，总内存1024单位
+// 创建页大小为64单位的分配器，总内存1024单位
 /// let mut allocator = PagedAllocator::new(1024, 64);
 /// 
-/// // 分配内存（会向上取整到页大小的整数倍）
+// 分配内存（会向上取整到页大小的整数倍）
 /// let block = allocator.allocate(100).unwrap();
 /// assert_eq!(block.size, 100); // 原始请求大小
 /// assert_eq!(allocator.used_memory(), 128); // 实际分配2页
 /// 
-/// // 释放内存
-/// assert!(allocator.deallocate(block.request_id));
+// 释放内存
+///  assert!(allocator.deallocate(block.request_id));
 /// ```
 pub struct PagedAllocator {
     /// 总内存大小

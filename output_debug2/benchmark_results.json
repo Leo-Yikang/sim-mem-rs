@@ -1,0 +1,2662 @@
+[
+  {
+    "allocator_name": "NaiveAllocator",
+    "simulation_duration": 129,
+    "total_allocations": 100,
+    "successful_allocations": 100,
+    "failed_allocations": 0,
+    "success_rate": 1.0,
+    "peak_memory_usage": 808,
+    "avg_memory_usage": 432.37333333333333,
+    "final_fragmentation": 0.0,
+    "avg_fragmentation": 0.3263857546846898,
+    "completed_requests": 100,
+    "avg_completion_time": 83.96,
+    "time_series": [
+      {
+        "time": 0,
+        "allocated_memory": 10,
+        "fragmentation": 0.0,
+        "active_requests": 1
+      },
+      {
+        "time": 4,
+        "allocated_memory": 19,
+        "fragmentation": 0.0,
+        "active_requests": 2
+      },
+      {
+        "time": 4,
+        "allocated_memory": 28,
+        "fragmentation": 0.0,
+        "active_requests": 3
+      },
+      {
+        "time": 4,
+        "allocated_memory": 35,
+        "fragmentation": 0.0,
+        "active_requests": 4
+      },
+      {
+        "time": 8,
+        "allocated_memory": 41,
+        "fragmentation": 0.0,
+        "active_requests": 5
+      },
+      {
+        "time": 9,
+        "allocated_memory": 50,
+        "fragmentation": 0.0,
+        "active_requests": 6
+      },
+      {
+        "time": 9,
+        "allocated_memory": 60,
+        "fragmentation": 0.0,
+        "active_requests": 7
+      },
+      {
+        "time": 10,
+        "allocated_memory": 73,
+        "fragmentation": 0.0,
+        "active_requests": 8
+      },
+      {
+        "time": 13,
+        "allocated_memory": 83,
+        "fragmentation": 0.0,
+        "active_requests": 9
+      },
+      {
+        "time": 13,
+        "allocated_memory": 93,
+        "fragmentation": 0.0,
+        "active_requests": 10
+      },
+      {
+        "time": 15,
+        "allocated_memory": 100,
+        "fragmentation": 0.0,
+        "active_requests": 11
+      },
+      {
+        "time": 15,
+        "allocated_memory": 107,
+        "fragmentation": 0.0,
+        "active_requests": 12
+      },
+      {
+        "time": 15,
+        "allocated_memory": 117,
+        "fragmentation": 0.0,
+        "active_requests": 13
+      },
+      {
+        "time": 16,
+        "allocated_memory": 133,
+        "fragmentation": 0.0,
+        "active_requests": 14
+      },
+      {
+        "time": 19,
+        "allocated_memory": 143,
+        "fragmentation": 0.0,
+        "active_requests": 15
+      },
+      {
+        "time": 19,
+        "allocated_memory": 149,
+        "fragmentation": 0.0,
+        "active_requests": 16
+      },
+      {
+        "time": 19,
+        "allocated_memory": 150,
+        "fragmentation": 0.0,
+        "active_requests": 17
+      },
+      {
+        "time": 19,
+        "allocated_memory": 160,
+        "fragmentation": 0.0,
+        "active_requests": 18
+      },
+      {
+        "time": 20,
+        "allocated_memory": 167,
+        "fragmentation": 0.0,
+        "active_requests": 19
+      },
+      {
+        "time": 20,
+        "allocated_memory": 175,
+        "fragmentation": 0.0,
+        "active_requests": 20
+      },
+      {
+        "time": 21,
+        "allocated_memory": 189,
+        "fragmentation": 0.0,
+        "active_requests": 21
+      },
+      {
+        "time": 21,
+        "allocated_memory": 201,
+        "fragmentation": 0.0,
+        "active_requests": 22
+      },
+      {
+        "time": 21,
+        "allocated_memory": 210,
+        "fragmentation": 0.0,
+        "active_requests": 23
+      },
+      {
+        "time": 22,
+        "allocated_memory": 225,
+        "fragmentation": 0.0,
+        "active_requests": 24
+      },
+      {
+        "time": 25,
+        "allocated_memory": 232,
+        "fragmentation": 0.0,
+        "active_requests": 25
+      },
+      {
+        "time": 25,
+        "allocated_memory": 245,
+        "fragmentation": 0.0,
+        "active_requests": 26
+      },
+      {
+        "time": 25,
+        "allocated_memory": 251,
+        "fragmentation": 0.0,
+        "active_requests": 27
+      },
+      {
+        "time": 26,
+        "allocated_memory": 257,
+        "fragmentation": 0.0,
+        "active_requests": 28
+      },
+      {
+        "time": 26,
+        "allocated_memory": 266,
+        "fragmentation": 0.0,
+        "active_requests": 29
+      },
+      {
+        "time": 26,
+        "allocated_memory": 275,
+        "fragmentation": 0.0,
+        "active_requests": 30
+      },
+      {
+        "time": 26,
+        "allocated_memory": 281,
+        "fragmentation": 0.0,
+        "active_requests": 31
+      },
+      {
+        "time": 26,
+        "allocated_memory": 293,
+        "fragmentation": 0.0,
+        "active_requests": 32
+      },
+      {
+        "time": 26,
+        "allocated_memory": 303,
+        "fragmentation": 0.0,
+        "active_requests": 33
+      },
+      {
+        "time": 26,
+        "allocated_memory": 306,
+        "fragmentation": 0.0,
+        "active_requests": 34
+      },
+      {
+        "time": 26,
+        "allocated_memory": 318,
+        "fragmentation": 0.0,
+        "active_requests": 35
+      },
+      {
+        "time": 27,
+        "allocated_memory": 302,
+        "fragmentation": 0.02216066481994461,
+        "active_requests": 34
+      },
+      {
+        "time": 27,
+        "allocated_memory": 302,
+        "fragmentation": 0.02216066481994461,
+        "active_requests": 34
+      },
+      {
+        "time": 28,
+        "allocated_memory": 313,
+        "fragmentation": 0.007032348804500654,
+        "active_requests": 35
+      },
+      {
+        "time": 28,
+        "allocated_memory": 325,
+        "fragmentation": 0.007153075822603716,
+        "active_requests": 36
+      },
+      {
+        "time": 28,
+        "allocated_memory": 315,
+        "fragmentation": 0.021156558533145242,
+        "active_requests": 35
+      },
+      {
+        "time": 28,
+        "allocated_memory": 315,
+        "fragmentation": 0.021156558533145242,
+        "active_requests": 35
+      },
+      {
+        "time": 29,
+        "allocated_memory": 327,
+        "fragmentation": 0.021520803443328518,
+        "active_requests": 36
+      },
+      {
+        "time": 30,
+        "allocated_memory": 338,
+        "fragmentation": 0.02186588921282795,
+        "active_requests": 37
+      },
+      {
+        "time": 30,
+        "allocated_memory": 345,
+        "fragmentation": 0.01178203240058906,
+        "active_requests": 38
+      },
+      {
+        "time": 30,
+        "allocated_memory": 354,
+        "fragmentation": 0.011940298507462699,
+        "active_requests": 39
+      },
+      {
+        "time": 33,
+        "allocated_memory": 361,
+        "fragmentation": 0.012066365007541435,
+        "active_requests": 40
+      },
+      {
+        "time": 34,
+        "allocated_memory": 372,
+        "fragmentation": 0.012269938650306789,
+        "active_requests": 41
+      },
+      {
+        "time": 34,
+        "allocated_memory": 378,
+        "fragmentation": 0.012383900928792602,
+        "active_requests": 42
+      },
+      {
+        "time": 35,
+        "allocated_memory": 392,
+        "fragmentation": 0.012658227848101222,
+        "active_requests": 43
+      },
+      {
+        "time": 35,
+        "allocated_memory": 398,
+        "fragmentation": 0.012779552715655007,
+        "active_requests": 44
+      },
+      {
+        "time": 35,
+        "allocated_memory": 409,
+        "fragmentation": 0.013008130081300862,
+        "active_requests": 45
+      },
+      {
+        "time": 35,
+        "allocated_memory": 422,
+        "fragmentation": 0.013289036544850474,
+        "active_requests": 46
+      },
+      {
+        "time": 35,
+        "allocated_memory": 429,
+        "fragmentation": 0.013445378151260456,
+        "active_requests": 47
+      },
+      {
+        "time": 35,
+        "allocated_memory": 439,
+        "fragmentation": 0.013675213675213627,
+        "active_requests": 48
+      },
+      {
+        "time": 35,
+        "allocated_memory": 448,
+        "fragmentation": 0.01388888888888884,
+        "active_requests": 49
+      },
+      {
+        "time": 35,
+        "allocated_memory": 461,
+        "fragmentation": 0.014209591474245165,
+        "active_requests": 50
+      },
+      {
+        "time": 35,
+        "allocated_memory": 469,
+        "fragmentation": 0.014414414414414378,
+        "active_requests": 51
+      },
+      {
+        "time": 36,
+        "allocated_memory": 473,
+        "fragmentation": 0.007259528130671544,
+        "active_requests": 52
+      },
+      {
+        "time": 39,
+        "allocated_memory": 483,
+        "fragmentation": 0.007393715341959317,
+        "active_requests": 53
+      },
+      {
+        "time": 39,
+        "allocated_memory": 497,
+        "fragmentation": 0.007590132827324458,
+        "active_requests": 54
+      },
+      {
+        "time": 39,
+        "allocated_memory": 505,
+        "fragmentation": 0.0077071290944122905,
+        "active_requests": 55
+      },
+      {
+        "time": 39,
+        "allocated_memory": 518,
+        "fragmentation": 0.007905138339920903,
+        "active_requests": 56
+      },
+      {
+        "time": 40,
+        "allocated_memory": 531,
+        "fragmentation": 0.008113590263691739,
+        "active_requests": 57
+      },
+      {
+        "time": 40,
+        "allocated_memory": 537,
+        "fragmentation": 0.008213552361396315,
+        "active_requests": 58
+      },
+      {
+        "time": 40,
+        "allocated_memory": 542,
+        "fragmentation": 0.008298755186721962,
+        "active_requests": 59
+      },
+      {
+        "time": 40,
+        "allocated_memory": 547,
+        "fragmentation": 0.008385744234800874,
+        "active_requests": 60
+      },
+      {
+        "time": 43,
+        "allocated_memory": 557,
+        "fragmentation": 0.008565310492505307,
+        "active_requests": 61
+      },
+      {
+        "time": 43,
+        "allocated_memory": 565,
+        "fragmentation": 0.008714596949891074,
+        "active_requests": 62
+      },
+      {
+        "time": 44,
+        "allocated_memory": 571,
+        "fragmentation": 0.008830022075055233,
+        "active_requests": 63
+      },
+      {
+        "time": 45,
+        "allocated_memory": 584,
+        "fragmentation": 0.009090909090909038,
+        "active_requests": 64
+      },
+      {
+        "time": 45,
+        "allocated_memory": 593,
+        "fragmentation": 0.009280742459396807,
+        "active_requests": 65
+      },
+      {
+        "time": 46,
+        "allocated_memory": 583,
+        "fragmentation": 0.031746031746031744,
+        "active_requests": 64
+      },
+      {
+        "time": 46,
+        "allocated_memory": 583,
+        "fragmentation": 0.031746031746031744,
+        "active_requests": 64
+      },
+      {
+        "time": 47,
+        "allocated_memory": 568,
+        "fragmentation": 0.0635964912280702,
+        "active_requests": 63
+      },
+      {
+        "time": 47,
+        "allocated_memory": 561,
+        "fragmentation": 0.0777537796976242,
+        "active_requests": 62
+      },
+      {
+        "time": 47,
+        "allocated_memory": 561,
+        "fragmentation": 0.0777537796976242,
+        "active_requests": 62
+      },
+      {
+        "time": 47,
+        "allocated_memory": 561,
+        "fragmentation": 0.0777537796976242,
+        "active_requests": 62
+      },
+      {
+        "time": 48,
+        "allocated_memory": 578,
+        "fragmentation": 0.08071748878923768,
+        "active_requests": 63
+      },
+      {
+        "time": 48,
+        "allocated_memory": 569,
+        "fragmentation": 0.09890109890109888,
+        "active_requests": 62
+      },
+      {
+        "time": 48,
+        "allocated_memory": 569,
+        "fragmentation": 0.09890109890109888,
+        "active_requests": 62
+      },
+      {
+        "time": 50,
+        "allocated_memory": 579,
+        "fragmentation": 0.0786516853932584,
+        "active_requests": 63
+      },
+      {
+        "time": 50,
+        "allocated_memory": 586,
+        "fragmentation": 0.0639269406392694,
+        "active_requests": 64
+      },
+      {
+        "time": 50,
+        "allocated_memory": 579,
+        "fragmentation": 0.0786516853932584,
+        "active_requests": 63
+      },
+      {
+        "time": 50,
+        "allocated_memory": 579,
+        "fragmentation": 0.0786516853932584,
+        "active_requests": 63
+      },
+      {
+        "time": 52,
+        "allocated_memory": 589,
+        "fragmentation": 0.05747126436781613,
+        "active_requests": 64
+      },
+      {
+        "time": 52,
+        "allocated_memory": 602,
+        "fragmentation": 0.05924170616113744,
+        "active_requests": 65
+      },
+      {
+        "time": 52,
+        "allocated_memory": 610,
+        "fragmentation": 0.04106280193236711,
+        "active_requests": 66
+      },
+      {
+        "time": 52,
+        "allocated_memory": 600,
+        "fragmentation": 0.06367924528301883,
+        "active_requests": 65
+      },
+      {
+        "time": 52,
+        "allocated_memory": 600,
+        "fragmentation": 0.06367924528301883,
+        "active_requests": 65
+      },
+      {
+        "time": 53,
+        "allocated_memory": 614,
+        "fragmentation": 0.06585365853658531,
+        "active_requests": 66
+      },
+      {
+        "time": 53,
+        "allocated_memory": 627,
+        "fragmentation": 0.06801007556675065,
+        "active_requests": 67
+      },
+      {
+        "time": 53,
+        "allocated_memory": 635,
+        "fragmentation": 0.04884318766066842,
+        "active_requests": 68
+      },
+      {
+        "time": 53,
+        "allocated_memory": 644,
+        "fragmentation": 0.050000000000000044,
+        "active_requests": 69
+      },
+      {
+        "time": 53,
+        "allocated_memory": 658,
+        "fragmentation": 0.051912568306010876,
+        "active_requests": 70
+      },
+      {
+        "time": 53,
+        "allocated_memory": 664,
+        "fragmentation": 0.036111111111111094,
+        "active_requests": 71
+      },
+      {
+        "time": 53,
+        "allocated_memory": 672,
+        "fragmentation": 0.03693181818181823,
+        "active_requests": 72
+      },
+      {
+        "time": 53,
+        "allocated_memory": 680,
+        "fragmentation": 0.03779069767441856,
+        "active_requests": 73
+      },
+      {
+        "time": 53,
+        "allocated_memory": 694,
+        "fragmentation": 0.039393939393939426,
+        "active_requests": 74
+      },
+      {
+        "time": 53,
+        "allocated_memory": 697,
+        "fragmentation": 0.030581039755351647,
+        "active_requests": 75
+      },
+      {
+        "time": 53,
+        "allocated_memory": 708,
+        "fragmentation": 0.03164556962025311,
+        "active_requests": 76
+      },
+      {
+        "time": 53,
+        "allocated_memory": 696,
+        "fragmentation": 0.06707317073170727,
+        "active_requests": 75
+      },
+      {
+        "time": 53,
+        "allocated_memory": 696,
+        "fragmentation": 0.06707317073170727,
+        "active_requests": 75
+      },
+      {
+        "time": 54,
+        "allocated_memory": 706,
+        "fragmentation": 0.037735849056603765,
+        "active_requests": 76
+      },
+      {
+        "time": 54,
+        "allocated_memory": 714,
+        "fragmentation": 0.03870967741935483,
+        "active_requests": 77
+      },
+      {
+        "time": 54,
+        "allocated_memory": 721,
+        "fragmentation": 0.03960396039603964,
+        "active_requests": 78
+      },
+      {
+        "time": 55,
+        "allocated_memory": 730,
+        "fragmentation": 0.04081632653061229,
+        "active_requests": 79
+      },
+      {
+        "time": 55,
+        "allocated_memory": 747,
+        "fragmentation": 0.04332129963898912,
+        "active_requests": 80
+      },
+      {
+        "time": 55,
+        "allocated_memory": 737,
+        "fragmentation": 0.0766550522648084,
+        "active_requests": 79
+      },
+      {
+        "time": 55,
+        "allocated_memory": 737,
+        "fragmentation": 0.0766550522648084,
+        "active_requests": 79
+      },
+      {
+        "time": 56,
+        "allocated_memory": 747,
+        "fragmentation": 0.04332129963898912,
+        "active_requests": 80
+      },
+      {
+        "time": 56,
+        "allocated_memory": 757,
+        "fragmentation": 0.0449438202247191,
+        "active_requests": 81
+      },
+      {
+        "time": 56,
+        "allocated_memory": 764,
+        "fragmentation": 0.0461538461538461,
+        "active_requests": 82
+      },
+      {
+        "time": 56,
+        "allocated_memory": 773,
+        "fragmentation": 0.047808764940239,
+        "active_requests": 83
+      },
+      {
+        "time": 56,
+        "allocated_memory": 767,
+        "fragmentation": 0.07003891050583655,
+        "active_requests": 82
+      },
+      {
+        "time": 56,
+        "allocated_memory": 767,
+        "fragmentation": 0.07003891050583655,
+        "active_requests": 82
+      },
+      {
+        "time": 57,
+        "allocated_memory": 776,
+        "fragmentation": 0.07258064516129037,
+        "active_requests": 83
+      },
+      {
+        "time": 57,
+        "allocated_memory": 789,
+        "fragmentation": 0.07659574468085106,
+        "active_requests": 84
+      },
+      {
+        "time": 58,
+        "allocated_memory": 800,
+        "fragmentation": 0.0803571428571429,
+        "active_requests": 85
+      },
+      {
+        "time": 58,
+        "allocated_memory": 804,
+        "fragmentation": 0.0636363636363636,
+        "active_requests": 86
+      },
+      {
+        "time": 58,
+        "allocated_memory": 795,
+        "fragmentation": 0.10043668122270744,
+        "active_requests": 85
+      },
+      {
+        "time": 58,
+        "allocated_memory": 795,
+        "fragmentation": 0.10043668122270744,
+        "active_requests": 85
+      },
+      {
+        "time": 59,
+        "allocated_memory": 804,
+        "fragmentation": 0.0636363636363636,
+        "active_requests": 86
+      },
+      {
+        "time": 59,
+        "allocated_memory": 808,
+        "fragmentation": 0.04629629629629628,
+        "active_requests": 87
+      },
+      {
+        "time": 59,
+        "allocated_memory": 795,
+        "fragmentation": 0.10043668122270744,
+        "active_requests": 86
+      },
+      {
+        "time": 59,
+        "allocated_memory": 795,
+        "fragmentation": 0.10043668122270744,
+        "active_requests": 86
+      },
+      {
+        "time": 60,
+        "allocated_memory": 806,
+        "fragmentation": 0.05504587155963303,
+        "active_requests": 87
+      },
+      {
+        "time": 63,
+        "allocated_memory": 805,
+        "fragmentation": 0.05936073059360736,
+        "active_requests": 86
+      },
+      {
+        "time": 63,
+        "allocated_memory": 796,
+        "fragmentation": 0.0964912280701754,
+        "active_requests": 85
+      },
+      {
+        "time": 63,
+        "allocated_memory": 796,
+        "fragmentation": 0.0964912280701754,
+        "active_requests": 85
+      },
+      {
+        "time": 63,
+        "allocated_memory": 796,
+        "fragmentation": 0.0964912280701754,
+        "active_requests": 85
+      },
+      {
+        "time": 64,
+        "allocated_memory": 786,
+        "fragmentation": 0.134453781512605,
+        "active_requests": 84
+      },
+      {
+        "time": 64,
+        "allocated_memory": 786,
+        "fragmentation": 0.134453781512605,
+        "active_requests": 84
+      },
+      {
+        "time": 65,
+        "allocated_memory": 778,
+        "fragmentation": 0.16260162601626016,
+        "active_requests": 83
+      },
+      {
+        "time": 65,
+        "allocated_memory": 768,
+        "fragmentation": 0.1953125,
+        "active_requests": 82
+      },
+      {
+        "time": 65,
+        "allocated_memory": 768,
+        "fragmentation": 0.1953125,
+        "active_requests": 82
+      },
+      {
+        "time": 65,
+        "allocated_memory": 768,
+        "fragmentation": 0.1953125,
+        "active_requests": 82
+      },
+      {
+        "time": 66,
+        "allocated_memory": 761,
+        "fragmentation": 0.21673003802281365,
+        "active_requests": 81
+      },
+      {
+        "time": 66,
+        "allocated_memory": 761,
+        "fragmentation": 0.21673003802281365,
+        "active_requests": 81
+      },
+      {
+        "time": 68,
+        "allocated_memory": 755,
+        "fragmentation": 0.23420074349442377,
+        "active_requests": 80
+      },
+      {
+        "time": 68,
+        "allocated_memory": 755,
+        "fragmentation": 0.23420074349442377,
+        "active_requests": 80
+      },
+      {
+        "time": 69,
+        "allocated_memory": 749,
+        "fragmentation": 0.25090909090909086,
+        "active_requests": 79
+      },
+      {
+        "time": 69,
+        "allocated_memory": 737,
+        "fragmentation": 0.28222996515679444,
+        "active_requests": 78
+      },
+      {
+        "time": 69,
+        "allocated_memory": 733,
+        "fragmentation": 0.29209621993127144,
+        "active_requests": 77
+      },
+      {
+        "time": 69,
+        "allocated_memory": 725,
+        "fragmentation": 0.3110367892976589,
+        "active_requests": 76
+      },
+      {
+        "time": 69,
+        "allocated_memory": 713,
+        "fragmentation": 0.337620578778135,
+        "active_requests": 75
+      },
+      {
+        "time": 69,
+        "allocated_memory": 713,
+        "fragmentation": 0.337620578778135,
+        "active_requests": 75
+      },
+      {
+        "time": 69,
+        "allocated_memory": 713,
+        "fragmentation": 0.337620578778135,
+        "active_requests": 75
+      },
+      {
+        "time": 69,
+        "allocated_memory": 713,
+        "fragmentation": 0.337620578778135,
+        "active_requests": 75
+      },
+      {
+        "time": 69,
+        "allocated_memory": 713,
+        "fragmentation": 0.337620578778135,
+        "active_requests": 75
+      },
+      {
+        "time": 69,
+        "allocated_memory": 713,
+        "fragmentation": 0.337620578778135,
+        "active_requests": 75
+      },
+      {
+        "time": 70,
+        "allocated_memory": 699,
+        "fragmentation": 0.36615384615384616,
+        "active_requests": 74
+      },
+      {
+        "time": 70,
+        "allocated_memory": 689,
+        "fragmentation": 0.3850746268656716,
+        "active_requests": 73
+      },
+      {
+        "time": 70,
+        "allocated_memory": 682,
+        "fragmentation": 0.39766081871345027,
+        "active_requests": 72
+      },
+      {
+        "time": 70,
+        "allocated_memory": 676,
+        "fragmentation": 0.40804597701149425,
+        "active_requests": 71
+      },
+      {
+        "time": 70,
+        "allocated_memory": 676,
+        "fragmentation": 0.40804597701149425,
+        "active_requests": 71
+      },
+      {
+        "time": 70,
+        "allocated_memory": 676,
+        "fragmentation": 0.40804597701149425,
+        "active_requests": 71
+      },
+      {
+        "time": 70,
+        "allocated_memory": 676,
+        "fragmentation": 0.40804597701149425,
+        "active_requests": 71
+      },
+      {
+        "time": 70,
+        "allocated_memory": 676,
+        "fragmentation": 0.40804597701149425,
+        "active_requests": 71
+      },
+      {
+        "time": 71,
+        "allocated_memory": 670,
+        "fragmentation": 0.4180790960451978,
+        "active_requests": 70
+      },
+      {
+        "time": 71,
+        "allocated_memory": 670,
+        "fragmentation": 0.4180790960451978,
+        "active_requests": 70
+      },
+      {
+        "time": 72,
+        "allocated_memory": 664,
+        "fragmentation": 0.4277777777777778,
+        "active_requests": 69
+      },
+      {
+        "time": 72,
+        "allocated_memory": 657,
+        "fragmentation": 0.4386920980926431,
+        "active_requests": 68
+      },
+      {
+        "time": 72,
+        "allocated_memory": 644,
+        "fragmentation": 0.45789473684210524,
+        "active_requests": 67
+      },
+      {
+        "time": 72,
+        "allocated_memory": 644,
+        "fragmentation": 0.45789473684210524,
+        "active_requests": 67
+      },
+      {
+        "time": 72,
+        "allocated_memory": 644,
+        "fragmentation": 0.45789473684210524,
+        "active_requests": 67
+      },
+      {
+        "time": 72,
+        "allocated_memory": 644,
+        "fragmentation": 0.45789473684210524,
+        "active_requests": 67
+      },
+      {
+        "time": 73,
+        "allocated_memory": 634,
+        "fragmentation": 0.4717948717948718,
+        "active_requests": 66
+      },
+      {
+        "time": 73,
+        "allocated_memory": 620,
+        "fragmentation": 0.4900990099009901,
+        "active_requests": 65
+      },
+      {
+        "time": 73,
+        "allocated_memory": 620,
+        "fragmentation": 0.4900990099009901,
+        "active_requests": 65
+      },
+      {
+        "time": 73,
+        "allocated_memory": 620,
+        "fragmentation": 0.4900990099009901,
+        "active_requests": 65
+      },
+      {
+        "time": 74,
+        "allocated_memory": 617,
+        "fragmentation": 0.4938574938574939,
+        "active_requests": 64
+      },
+      {
+        "time": 74,
+        "allocated_memory": 617,
+        "fragmentation": 0.4938574938574939,
+        "active_requests": 64
+      },
+      {
+        "time": 76,
+        "allocated_memory": 610,
+        "fragmentation": 0.5024154589371981,
+        "active_requests": 63
+      },
+      {
+        "time": 76,
+        "allocated_memory": 610,
+        "fragmentation": 0.5024154589371981,
+        "active_requests": 63
+      },
+      {
+        "time": 77,
+        "allocated_memory": 593,
+        "fragmentation": 0.5220417633410672,
+        "active_requests": 62
+      },
+      {
+        "time": 77,
+        "allocated_memory": 580,
+        "fragmentation": 0.5360360360360361,
+        "active_requests": 61
+      },
+      {
+        "time": 77,
+        "allocated_memory": 571,
+        "fragmentation": 0.5452538631346578,
+        "active_requests": 60
+      },
+      {
+        "time": 77,
+        "allocated_memory": 571,
+        "fragmentation": 0.5452538631346578,
+        "active_requests": 60
+      },
+      {
+        "time": 77,
+        "allocated_memory": 571,
+        "fragmentation": 0.5452538631346578,
+        "active_requests": 60
+      },
+      {
+        "time": 77,
+        "allocated_memory": 571,
+        "fragmentation": 0.5452538631346578,
+        "active_requests": 60
+      },
+      {
+        "time": 78,
+        "allocated_memory": 564,
+        "fragmentation": 0.5521739130434782,
+        "active_requests": 59
+      },
+      {
+        "time": 78,
+        "allocated_memory": 554,
+        "fragmentation": 0.5617021276595744,
+        "active_requests": 58
+      },
+      {
+        "time": 78,
+        "allocated_memory": 554,
+        "fragmentation": 0.5617021276595744,
+        "active_requests": 58
+      },
+      {
+        "time": 78,
+        "allocated_memory": 554,
+        "fragmentation": 0.5617021276595744,
+        "active_requests": 58
+      },
+      {
+        "time": 79,
+        "allocated_memory": 547,
+        "fragmentation": 0.5681341719077568,
+        "active_requests": 57
+      },
+      {
+        "time": 79,
+        "allocated_memory": 547,
+        "fragmentation": 0.5681341719077568,
+        "active_requests": 57
+      },
+      {
+        "time": 80,
+        "allocated_memory": 534,
+        "fragmentation": 0.5795918367346939,
+        "active_requests": 56
+      },
+      {
+        "time": 80,
+        "allocated_memory": 534,
+        "fragmentation": 0.5795918367346939,
+        "active_requests": 56
+      },
+      {
+        "time": 81,
+        "allocated_memory": 523,
+        "fragmentation": 0.5888223552894212,
+        "active_requests": 55
+      },
+      {
+        "time": 81,
+        "allocated_memory": 518,
+        "fragmentation": 0.5928853754940712,
+        "active_requests": 54
+      },
+      {
+        "time": 81,
+        "allocated_memory": 518,
+        "fragmentation": 0.5928853754940712,
+        "active_requests": 54
+      },
+      {
+        "time": 81,
+        "allocated_memory": 518,
+        "fragmentation": 0.5928853754940712,
+        "active_requests": 54
+      },
+      {
+        "time": 83,
+        "allocated_memory": 506,
+        "fragmentation": 0.6023166023166023,
+        "active_requests": 53
+      },
+      {
+        "time": 83,
+        "allocated_memory": 497,
+        "fragmentation": 0.6091081593927894,
+        "active_requests": 52
+      },
+      {
+        "time": 83,
+        "allocated_memory": 497,
+        "fragmentation": 0.6091081593927894,
+        "active_requests": 52
+      },
+      {
+        "time": 83,
+        "allocated_memory": 497,
+        "fragmentation": 0.6091081593927894,
+        "active_requests": 52
+      },
+      {
+        "time": 84,
+        "allocated_memory": 484,
+        "fragmentation": 0.6185185185185185,
+        "active_requests": 51
+      },
+      {
+        "time": 84,
+        "allocated_memory": 484,
+        "fragmentation": 0.6185185185185185,
+        "active_requests": 51
+      },
+      {
+        "time": 85,
+        "allocated_memory": 475,
+        "fragmentation": 0.6247723132969034,
+        "active_requests": 50
+      },
+      {
+        "time": 85,
+        "allocated_memory": 475,
+        "fragmentation": 0.6247723132969034,
+        "active_requests": 50
+      },
+      {
+        "time": 86,
+        "allocated_memory": 465,
+        "fragmentation": 0.631484794275492,
+        "active_requests": 49
+      },
+      {
+        "time": 86,
+        "allocated_memory": 456,
+        "fragmentation": 0.6373239436619718,
+        "active_requests": 48
+      },
+      {
+        "time": 86,
+        "allocated_memory": 456,
+        "fragmentation": 0.6373239436619718,
+        "active_requests": 48
+      },
+      {
+        "time": 86,
+        "allocated_memory": 456,
+        "fragmentation": 0.6373239436619718,
+        "active_requests": 48
+      },
+      {
+        "time": 88,
+        "allocated_memory": 439,
+        "fragmentation": 0.6478632478632478,
+        "active_requests": 47
+      },
+      {
+        "time": 88,
+        "allocated_memory": 439,
+        "fragmentation": 0.6478632478632478,
+        "active_requests": 47
+      },
+      {
+        "time": 89,
+        "allocated_memory": 429,
+        "fragmentation": 0.653781512605042,
+        "active_requests": 46
+      },
+      {
+        "time": 89,
+        "allocated_memory": 423,
+        "fragmentation": 0.6572379367720467,
+        "active_requests": 45
+      },
+      {
+        "time": 89,
+        "allocated_memory": 423,
+        "fragmentation": 0.6572379367720467,
+        "active_requests": 45
+      },
+      {
+        "time": 89,
+        "allocated_memory": 423,
+        "fragmentation": 0.6572379367720467,
+        "active_requests": 45
+      },
+      {
+        "time": 90,
+        "allocated_memory": 414,
+        "fragmentation": 0.6622950819672131,
+        "active_requests": 44
+      },
+      {
+        "time": 90,
+        "allocated_memory": 406,
+        "fragmentation": 0.6666666666666667,
+        "active_requests": 43
+      },
+      {
+        "time": 90,
+        "allocated_memory": 406,
+        "fragmentation": 0.6666666666666667,
+        "active_requests": 43
+      },
+      {
+        "time": 90,
+        "allocated_memory": 406,
+        "fragmentation": 0.6666666666666667,
+        "active_requests": 43
+      },
+      {
+        "time": 91,
+        "allocated_memory": 395,
+        "fragmentation": 0.6724960254372019,
+        "active_requests": 42
+      },
+      {
+        "time": 91,
+        "allocated_memory": 385,
+        "fragmentation": 0.6776212832550861,
+        "active_requests": 41
+      },
+      {
+        "time": 91,
+        "allocated_memory": 375,
+        "fragmentation": 0.6825885978428352,
+        "active_requests": 40
+      },
+      {
+        "time": 91,
+        "allocated_memory": 367,
+        "fragmentation": 0.6864535768645358,
+        "active_requests": 39
+      },
+      {
+        "time": 91,
+        "allocated_memory": 356,
+        "fragmentation": 0.6916167664670658,
+        "active_requests": 38
+      },
+      {
+        "time": 91,
+        "allocated_memory": 356,
+        "fragmentation": 0.6916167664670658,
+        "active_requests": 38
+      },
+      {
+        "time": 91,
+        "allocated_memory": 356,
+        "fragmentation": 0.6916167664670658,
+        "active_requests": 38
+      },
+      {
+        "time": 91,
+        "allocated_memory": 356,
+        "fragmentation": 0.6916167664670658,
+        "active_requests": 38
+      },
+      {
+        "time": 91,
+        "allocated_memory": 356,
+        "fragmentation": 0.6916167664670658,
+        "active_requests": 38
+      },
+      {
+        "time": 91,
+        "allocated_memory": 356,
+        "fragmentation": 0.6916167664670658,
+        "active_requests": 38
+      },
+      {
+        "time": 92,
+        "allocated_memory": 352,
+        "fragmentation": 0.6934523809523809,
+        "active_requests": 37
+      },
+      {
+        "time": 92,
+        "allocated_memory": 343,
+        "fragmentation": 0.697503671071953,
+        "active_requests": 36
+      },
+      {
+        "time": 92,
+        "allocated_memory": 343,
+        "fragmentation": 0.697503671071953,
+        "active_requests": 36
+      },
+      {
+        "time": 92,
+        "allocated_memory": 343,
+        "fragmentation": 0.697503671071953,
+        "active_requests": 36
+      },
+      {
+        "time": 93,
+        "allocated_memory": 338,
+        "fragmentation": 0.6997084548104957,
+        "active_requests": 35
+      },
+      {
+        "time": 93,
+        "allocated_memory": 326,
+        "fragmentation": 0.7048710601719197,
+        "active_requests": 34
+      },
+      {
+        "time": 93,
+        "allocated_memory": 326,
+        "fragmentation": 0.7048710601719197,
+        "active_requests": 34
+      },
+      {
+        "time": 93,
+        "allocated_memory": 326,
+        "fragmentation": 0.7048710601719197,
+        "active_requests": 34
+      },
+      {
+        "time": 94,
+        "allocated_memory": 312,
+        "fragmentation": 0.7106741573033708,
+        "active_requests": 33
+      },
+      {
+        "time": 94,
+        "allocated_memory": 312,
+        "fragmentation": 0.7106741573033708,
+        "active_requests": 33
+      },
+      {
+        "time": 96,
+        "allocated_memory": 305,
+        "fragmentation": 0.7134909596662031,
+        "active_requests": 32
+      },
+      {
+        "time": 96,
+        "allocated_memory": 296,
+        "fragmentation": 0.717032967032967,
+        "active_requests": 31
+      },
+      {
+        "time": 96,
+        "allocated_memory": 296,
+        "fragmentation": 0.717032967032967,
+        "active_requests": 31
+      },
+      {
+        "time": 96,
+        "allocated_memory": 296,
+        "fragmentation": 0.717032967032967,
+        "active_requests": 31
+      },
+      {
+        "time": 97,
+        "allocated_memory": 288,
+        "fragmentation": 0.7201086956521738,
+        "active_requests": 30
+      },
+      {
+        "time": 97,
+        "allocated_memory": 280,
+        "fragmentation": 0.7231182795698925,
+        "active_requests": 29
+      },
+      {
+        "time": 97,
+        "allocated_memory": 269,
+        "fragmentation": 0.6516556291390728,
+        "active_requests": 28
+      },
+      {
+        "time": 97,
+        "allocated_memory": 269,
+        "fragmentation": 0.6516556291390728,
+        "active_requests": 28
+      },
+      {
+        "time": 97,
+        "allocated_memory": 269,
+        "fragmentation": 0.6516556291390728,
+        "active_requests": 28
+      },
+      {
+        "time": 97,
+        "allocated_memory": 269,
+        "fragmentation": 0.6516556291390728,
+        "active_requests": 28
+      },
+      {
+        "time": 98,
+        "allocated_memory": 256,
+        "fragmentation": 0.6575520833333333,
+        "active_requests": 27
+      },
+      {
+        "time": 98,
+        "allocated_memory": 249,
+        "fragmentation": 0.6606451612903226,
+        "active_requests": 26
+      },
+      {
+        "time": 98,
+        "allocated_memory": 236,
+        "fragmentation": 0.666243654822335,
+        "active_requests": 25
+      },
+      {
+        "time": 98,
+        "allocated_memory": 228,
+        "fragmentation": 0.6695979899497487,
+        "active_requests": 24
+      },
+      {
+        "time": 98,
+        "allocated_memory": 228,
+        "fragmentation": 0.6695979899497487,
+        "active_requests": 24
+      },
+      {
+        "time": 98,
+        "allocated_memory": 228,
+        "fragmentation": 0.6695979899497487,
+        "active_requests": 24
+      },
+      {
+        "time": 98,
+        "allocated_memory": 228,
+        "fragmentation": 0.6695979899497487,
+        "active_requests": 24
+      },
+      {
+        "time": 98,
+        "allocated_memory": 228,
+        "fragmentation": 0.6695979899497487,
+        "active_requests": 24
+      },
+      {
+        "time": 101,
+        "allocated_memory": 222,
+        "fragmentation": 0.672069825436409,
+        "active_requests": 23
+      },
+      {
+        "time": 101,
+        "allocated_memory": 222,
+        "fragmentation": 0.672069825436409,
+        "active_requests": 23
+      },
+      {
+        "time": 102,
+        "allocated_memory": 216,
+        "fragmentation": 0.6745049504950495,
+        "active_requests": 22
+      },
+      {
+        "time": 102,
+        "allocated_memory": 212,
+        "fragmentation": 0.6711822660098522,
+        "active_requests": 21
+      },
+      {
+        "time": 102,
+        "allocated_memory": 212,
+        "fragmentation": 0.6711822660098522,
+        "active_requests": 21
+      },
+      {
+        "time": 102,
+        "allocated_memory": 212,
+        "fragmentation": 0.6711822660098522,
+        "active_requests": 21
+      },
+      {
+        "time": 103,
+        "allocated_memory": 198,
+        "fragmentation": 0.6767554479418887,
+        "active_requests": 20
+      },
+      {
+        "time": 103,
+        "allocated_memory": 189,
+        "fragmentation": 0.6802395209580838,
+        "active_requests": 19
+      },
+      {
+        "time": 103,
+        "allocated_memory": 175,
+        "fragmentation": 0.6855123674911661,
+        "active_requests": 18
+      },
+      {
+        "time": 103,
+        "allocated_memory": 175,
+        "fragmentation": 0.6855123674911661,
+        "active_requests": 18
+      },
+      {
+        "time": 103,
+        "allocated_memory": 175,
+        "fragmentation": 0.6855123674911661,
+        "active_requests": 18
+      },
+      {
+        "time": 103,
+        "allocated_memory": 175,
+        "fragmentation": 0.6855123674911661,
+        "active_requests": 18
+      },
+      {
+        "time": 105,
+        "allocated_memory": 169,
+        "fragmentation": 0.687719298245614,
+        "active_requests": 17
+      },
+      {
+        "time": 105,
+        "allocated_memory": 160,
+        "fragmentation": 0.6909722222222222,
+        "active_requests": 16
+      },
+      {
+        "time": 105,
+        "allocated_memory": 160,
+        "fragmentation": 0.6909722222222222,
+        "active_requests": 16
+      },
+      {
+        "time": 105,
+        "allocated_memory": 160,
+        "fragmentation": 0.6909722222222222,
+        "active_requests": 16
+      },
+      {
+        "time": 108,
+        "allocated_memory": 147,
+        "fragmentation": 0.6955530216647663,
+        "active_requests": 15
+      },
+      {
+        "time": 108,
+        "allocated_memory": 138,
+        "fragmentation": 0.6986455981941309,
+        "active_requests": 14
+      },
+      {
+        "time": 108,
+        "allocated_memory": 138,
+        "fragmentation": 0.6986455981941309,
+        "active_requests": 14
+      },
+      {
+        "time": 108,
+        "allocated_memory": 138,
+        "fragmentation": 0.6986455981941309,
+        "active_requests": 14
+      },
+      {
+        "time": 109,
+        "allocated_memory": 135,
+        "fragmentation": 0.6996625421822272,
+        "active_requests": 13
+      },
+      {
+        "time": 109,
+        "allocated_memory": 127,
+        "fragmentation": 0.7023411371237458,
+        "active_requests": 12
+      },
+      {
+        "time": 109,
+        "allocated_memory": 127,
+        "fragmentation": 0.7023411371237458,
+        "active_requests": 12
+      },
+      {
+        "time": 109,
+        "allocated_memory": 127,
+        "fragmentation": 0.7023411371237458,
+        "active_requests": 12
+      },
+      {
+        "time": 110,
+        "allocated_memory": 113,
+        "fragmentation": 0.6684961580680571,
+        "active_requests": 11
+      },
+      {
+        "time": 110,
+        "allocated_memory": 113,
+        "fragmentation": 0.6684961580680571,
+        "active_requests": 11
+      },
+      {
+        "time": 111,
+        "allocated_memory": 100,
+        "fragmentation": 0.6731601731601732,
+        "active_requests": 10
+      },
+      {
+        "time": 111,
+        "allocated_memory": 92,
+        "fragmentation": 0.6759656652360515,
+        "active_requests": 9
+      },
+      {
+        "time": 111,
+        "allocated_memory": 81,
+        "fragmentation": 0.679745493107105,
+        "active_requests": 8
+      },
+      {
+        "time": 111,
+        "allocated_memory": 81,
+        "fragmentation": 0.679745493107105,
+        "active_requests": 8
+      },
+      {
+        "time": 111,
+        "allocated_memory": 81,
+        "fragmentation": 0.679745493107105,
+        "active_requests": 8
+      },
+      {
+        "time": 111,
+        "allocated_memory": 81,
+        "fragmentation": 0.679745493107105,
+        "active_requests": 8
+      },
+      {
+        "time": 113,
+        "allocated_memory": 68,
+        "fragmentation": 0.42573221757322177,
+        "active_requests": 7
+      },
+      {
+        "time": 113,
+        "allocated_memory": 58,
+        "fragmentation": 0.43167701863354035,
+        "active_requests": 6
+      },
+      {
+        "time": 113,
+        "allocated_memory": 58,
+        "fragmentation": 0.43167701863354035,
+        "active_requests": 6
+      },
+      {
+        "time": 113,
+        "allocated_memory": 58,
+        "fragmentation": 0.43167701863354035,
+        "active_requests": 6
+      },
+      {
+        "time": 114,
+        "allocated_memory": 48,
+        "fragmentation": 0.4375,
+        "active_requests": 5
+      },
+      {
+        "time": 114,
+        "allocated_memory": 48,
+        "fragmentation": 0.4375,
+        "active_requests": 5
+      },
+      {
+        "time": 115,
+        "allocated_memory": 37,
+        "fragmentation": 0.44376899696048633,
+        "active_requests": 4
+      },
+      {
+        "time": 115,
+        "allocated_memory": 37,
+        "fragmentation": 0.44376899696048633,
+        "active_requests": 4
+      },
+      {
+        "time": 119,
+        "allocated_memory": 26,
+        "fragmentation": 0.44989979959919835,
+        "active_requests": 3
+      },
+      {
+        "time": 119,
+        "allocated_memory": 26,
+        "fragmentation": 0.44989979959919835,
+        "active_requests": 3
+      },
+      {
+        "time": 121,
+        "allocated_memory": 17,
+        "fragmentation": 0.45481628599801394,
+        "active_requests": 2
+      },
+      {
+        "time": 121,
+        "allocated_memory": 17,
+        "fragmentation": 0.45481628599801394,
+        "active_requests": 2
+      },
+      {
+        "time": 128,
+        "allocated_memory": 7,
+        "fragmentation": 0.24385447394296955,
+        "active_requests": 1
+      },
+      {
+        "time": 128,
+        "allocated_memory": 7,
+        "fragmentation": 0.24385447394296955,
+        "active_requests": 1
+      },
+      {
+        "time": 129,
+        "allocated_memory": 0,
+        "fragmentation": 0.0,
+        "active_requests": 0
+      },
+      {
+        "time": 129,
+        "allocated_memory": 0,
+        "fragmentation": 0.0,
+        "active_requests": 0
+      }
+    ]
+  },
+  {
+    "allocator_name": "PagedAllocator",
+    "simulation_duration": 96,
+    "total_allocations": 100,
+    "successful_allocations": 19,
+    "failed_allocations": 81,
+    "success_rate": 0.19,
+    "peak_memory_usage": 1024,
+    "avg_memory_usage": 839.4202898550725,
+    "final_fragmentation": 0.0,
+    "avg_fragmentation": 0.8403533653406274,
+    "completed_requests": 19,
+    "avg_completion_time": 63.8421052631579,
+    "time_series": [
+      {
+        "time": 1,
+        "allocated_memory": 64,
+        "fragmentation": 0.84375,
+        "active_requests": 1
+      },
+      {
+        "time": 4,
+        "allocated_memory": 128,
+        "fragmentation": 0.828125,
+        "active_requests": 2
+      },
+      {
+        "time": 4,
+        "allocated_memory": 192,
+        "fragmentation": 0.84375,
+        "active_requests": 3
+      },
+      {
+        "time": 5,
+        "allocated_memory": 256,
+        "fragmentation": 0.84375,
+        "active_requests": 4
+      },
+      {
+        "time": 6,
+        "allocated_memory": 320,
+        "fragmentation": 0.853125,
+        "active_requests": 5
+      },
+      {
+        "time": 6,
+        "allocated_memory": 384,
+        "fragmentation": 0.8619791666666666,
+        "active_requests": 6
+      },
+      {
+        "time": 6,
+        "allocated_memory": 448,
+        "fragmentation": 0.8526785714285714,
+        "active_requests": 7
+      },
+      {
+        "time": 6,
+        "allocated_memory": 512,
+        "fragmentation": 0.84765625,
+        "active_requests": 8
+      },
+      {
+        "time": 6,
+        "allocated_memory": 576,
+        "fragmentation": 0.8454861111111112,
+        "active_requests": 9
+      },
+      {
+        "time": 6,
+        "allocated_memory": 640,
+        "fragmentation": 0.846875,
+        "active_requests": 10
+      },
+      {
+        "time": 6,
+        "allocated_memory": 704,
+        "fragmentation": 0.8508522727272727,
+        "active_requests": 11
+      },
+      {
+        "time": 6,
+        "allocated_memory": 768,
+        "fragmentation": 0.8580729166666666,
+        "active_requests": 12
+      },
+      {
+        "time": 6,
+        "allocated_memory": 832,
+        "fragmentation": 0.8509615384615384,
+        "active_requests": 13
+      },
+      {
+        "time": 6,
+        "allocated_memory": 896,
+        "fragmentation": 0.8504464285714286,
+        "active_requests": 14
+      },
+      {
+        "time": 6,
+        "allocated_memory": 960,
+        "fragmentation": 0.8489583333333334,
+        "active_requests": 15
+      },
+      {
+        "time": 6,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 16
+      },
+      {
+        "time": 6,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 17
+      },
+      {
+        "time": 7,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 18
+      },
+      {
+        "time": 10,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 19
+      },
+      {
+        "time": 10,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 20
+      },
+      {
+        "time": 12,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 21
+      },
+      {
+        "time": 13,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 22
+      },
+      {
+        "time": 14,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 23
+      },
+      {
+        "time": 14,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 24
+      },
+      {
+        "time": 15,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 25
+      },
+      {
+        "time": 15,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 26
+      },
+      {
+        "time": 15,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 27
+      },
+      {
+        "time": 15,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 28
+      },
+      {
+        "time": 15,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 29
+      },
+      {
+        "time": 17,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 30
+      },
+      {
+        "time": 17,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 31
+      },
+      {
+        "time": 18,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 32
+      },
+      {
+        "time": 19,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 33
+      },
+      {
+        "time": 19,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 34
+      },
+      {
+        "time": 19,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 35
+      },
+      {
+        "time": 19,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 36
+      },
+      {
+        "time": 21,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 37
+      },
+      {
+        "time": 21,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 38
+      },
+      {
+        "time": 21,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 39
+      },
+      {
+        "time": 21,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 40
+      },
+      {
+        "time": 21,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 41
+      },
+      {
+        "time": 22,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 42
+      },
+      {
+        "time": 22,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 43
+      },
+      {
+        "time": 22,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 44
+      },
+      {
+        "time": 22,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 45
+      },
+      {
+        "time": 24,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 46
+      },
+      {
+        "time": 24,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 47
+      },
+      {
+        "time": 24,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 48
+      },
+      {
+        "time": 24,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 49
+      },
+      {
+        "time": 24,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 50
+      },
+      {
+        "time": 26,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 51
+      },
+      {
+        "time": 26,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 52
+      },
+      {
+        "time": 26,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 53
+      },
+      {
+        "time": 26,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8466796875,
+        "active_requests": 54
+      },
+      {
+        "time": 26,
+        "allocated_memory": 960,
+        "fragmentation": 0.846875,
+        "active_requests": 53
+      },
+      {
+        "time": 26,
+        "allocated_memory": 960,
+        "fragmentation": 0.846875,
+        "active_requests": 53
+      },
+      {
+        "time": 27,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 54
+      },
+      {
+        "time": 27,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 55
+      },
+      {
+        "time": 27,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 56
+      },
+      {
+        "time": 28,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 57
+      },
+      {
+        "time": 28,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 58
+      },
+      {
+        "time": 28,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 59
+      },
+      {
+        "time": 28,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 60
+      },
+      {
+        "time": 28,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 61
+      },
+      {
+        "time": 28,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 62
+      },
+      {
+        "time": 29,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 63
+      },
+      {
+        "time": 29,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 64
+      },
+      {
+        "time": 29,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 65
+      },
+      {
+        "time": 30,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 66
+      },
+      {
+        "time": 30,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 67
+      },
+      {
+        "time": 31,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 68
+      },
+      {
+        "time": 31,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 69
+      },
+      {
+        "time": 31,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 70
+      },
+      {
+        "time": 34,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 71
+      },
+      {
+        "time": 34,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 72
+      },
+      {
+        "time": 34,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 73
+      },
+      {
+        "time": 34,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 74
+      },
+      {
+        "time": 34,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 75
+      },
+      {
+        "time": 34,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 76
+      },
+      {
+        "time": 34,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 77
+      },
+      {
+        "time": 34,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 78
+      },
+      {
+        "time": 35,
+        "allocated_memory": 1024,
+        "fragmentation": 0.849609375,
+        "active_requests": 79
+      },
+      {
+        "time": 35,
+        "allocated_memory": 960,
+        "fragmentation": 0.8520833333333333,
+        "active_requests": 78
+      },
+      {
+        "time": 35,
+        "allocated_memory": 960,
+        "fragmentation": 0.8520833333333333,
+        "active_requests": 78
+      },
+      {
+        "time": 37,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 79
+      },
+      {
+        "time": 37,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 80
+      },
+      {
+        "time": 37,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 81
+      },
+      {
+        "time": 37,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 82
+      },
+      {
+        "time": 37,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 83
+      },
+      {
+        "time": 37,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 84
+      },
+      {
+        "time": 37,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 85
+      },
+      {
+        "time": 37,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 86
+      },
+      {
+        "time": 37,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 87
+      },
+      {
+        "time": 37,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 88
+      },
+      {
+        "time": 38,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 89
+      },
+      {
+        "time": 39,
+        "allocated_memory": 1024,
+        "fragmentation": 0.85546875,
+        "active_requests": 90
+      },
+      {
+        "time": 39,
+        "allocated_memory": 960,
+        "fragmentation": 0.8541666666666666,
+        "active_requests": 89
+      },
+      {
+        "time": 39,
+        "allocated_memory": 960,
+        "fragmentation": 0.8541666666666666,
+        "active_requests": 89
+      },
+      {
+        "time": 40,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8525390625,
+        "active_requests": 90
+      },
+      {
+        "time": 42,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8525390625,
+        "active_requests": 91
+      },
+      {
+        "time": 42,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8525390625,
+        "active_requests": 92
+      },
+      {
+        "time": 42,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8525390625,
+        "active_requests": 93
+      },
+      {
+        "time": 42,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8525390625,
+        "active_requests": 94
+      },
+      {
+        "time": 42,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8525390625,
+        "active_requests": 95
+      },
+      {
+        "time": 43,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8525390625,
+        "active_requests": 96
+      },
+      {
+        "time": 43,
+        "allocated_memory": 1024,
+        "fragmentation": 0.8525390625,
+        "active_requests": 97
+      },
+      {
+        "time": 47,
+        "allocated_memory": 960,
+        "fragmentation": 0.846875,
+        "active_requests": 96
+      },
+      {
+        "time": 47,
+        "allocated_memory": 960,
+        "fragmentation": 0.846875,
+        "active_requests": 96
+      },
+      {
+        "time": 56,
+        "allocated_memory": 896,
+        "fragmentation": 0.8470982142857143,
+        "active_requests": 95
+      },
+      {
+        "time": 56,
+        "allocated_memory": 896,
+        "fragmentation": 0.8470982142857143,
+        "active_requests": 95
+      },
+      {
+        "time": 58,
+        "allocated_memory": 832,
+        "fragmentation": 0.8461538461538461,
+        "active_requests": 94
+      },
+      {
+        "time": 58,
+        "allocated_memory": 832,
+        "fragmentation": 0.8461538461538461,
+        "active_requests": 94
+      },
+      {
+        "time": 59,
+        "allocated_memory": 768,
+        "fragmentation": 0.84765625,
+        "active_requests": 93
+      },
+      {
+        "time": 59,
+        "allocated_memory": 768,
+        "fragmentation": 0.84765625,
+        "active_requests": 93
+      },
+      {
+        "time": 60,
+        "allocated_memory": 704,
+        "fragmentation": 0.8508522727272727,
+        "active_requests": 92
+      },
+      {
+        "time": 60,
+        "allocated_memory": 704,
+        "fragmentation": 0.8508522727272727,
+        "active_requests": 92
+      },
+      {
+        "time": 61,
+        "allocated_memory": 640,
+        "fragmentation": 0.8546875,
+        "active_requests": 91
+      },
+      {
+        "time": 61,
+        "allocated_memory": 640,
+        "fragmentation": 0.8546875,
+        "active_requests": 91
+      },
+      {
+        "time": 62,
+        "allocated_memory": 576,
+        "fragmentation": 0.8576388888888888,
+        "active_requests": 90
+      },
+      {
+        "time": 62,
+        "allocated_memory": 576,
+        "fragmentation": 0.8576388888888888,
+        "active_requests": 90
+      },
+      {
+        "time": 66,
+        "allocated_memory": 512,
+        "fragmentation": 0.865234375,
+        "active_requests": 89
+      },
+      {
+        "time": 66,
+        "allocated_memory": 512,
+        "fragmentation": 0.865234375,
+        "active_requests": 89
+      },
+      {
+        "time": 68,
+        "allocated_memory": 448,
+        "fragmentation": 0.8794642857142857,
+        "active_requests": 88
+      },
+      {
+        "time": 68,
+        "allocated_memory": 448,
+        "fragmentation": 0.8794642857142857,
+        "active_requests": 88
+      },
+      {
+        "time": 69,
+        "allocated_memory": 384,
+        "fragmentation": 0.875,
+        "active_requests": 87
+      },
+      {
+        "time": 69,
+        "allocated_memory": 384,
+        "fragmentation": 0.875,
+        "active_requests": 87
+      },
+      {
+        "time": 73,
+        "allocated_memory": 320,
+        "fragmentation": 0.871875,
+        "active_requests": 86
+      },
+      {
+        "time": 73,
+        "allocated_memory": 320,
+        "fragmentation": 0.871875,
+        "active_requests": 86
+      },
+      {
+        "time": 75,
+        "allocated_memory": 256,
+        "fragmentation": 0.87890625,
+        "active_requests": 85
+      },
+      {
+        "time": 75,
+        "allocated_memory": 256,
+        "fragmentation": 0.87890625,
+        "active_requests": 85
+      },
+      {
+        "time": 83,
+        "allocated_memory": 192,
+        "fragmentation": 0.875,
+        "active_requests": 84
+      },
+      {
+        "time": 83,
+        "allocated_memory": 192,
+        "fragmentation": 0.875,
+        "active_requests": 84
+      },
+      {
+        "time": 85,
+        "allocated_memory": 128,
+        "fragmentation": 0.8671875,
+        "active_requests": 83
+      },
+      {
+        "time": 85,
+        "allocated_memory": 128,
+        "fragmentation": 0.8671875,
+        "active_requests": 83
+      },
+      {
+        "time": 95,
+        "allocated_memory": 64,
+        "fragmentation": 0.90625,
+        "active_requests": 82
+      },
+      {
+        "time": 95,
+        "allocated_memory": 64,
+        "fragmentation": 0.90625,
+        "active_requests": 82
+      },
+      {
+        "time": 96,
+        "allocated_memory": 0,
+        "fragmentation": 0.0,
+        "active_requests": 81
+      },
+      {
+        "time": 96,
+        "allocated_memory": 0,
+        "fragmentation": 0.0,
+        "active_requests": 81
+      }
+    ]
+  }
+]
