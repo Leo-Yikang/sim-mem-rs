@@ -6,15 +6,15 @@
 
 ## 项目身份
 
-| 属性 | 值 |
-|------|-----|
-| **名称** | sim-mem-rs (v0.2.0) |
-| **语言** | Rust (edition 2021, nightly toolchain) |
-| **目标** | 面向大模型训练的内存模拟器，使用 DES 评估不同分配策略 |
-| **当前阶段** | **Phase 0 已完成** — 核心框架 + Naive/Paged 基准对比 |
-| **代码位置** | `/home/lykspeaking/git/mine/sim-mem-rs` |
-| **依赖** | rand, rand_distr, serde, serde_json, clap |
-| **可视化** | Python 脚本 (`scripts/visualize.py`, 需要 matplotlib) |
+| 属性         | 值                                                                                      |
+| ------------ | --------------------------------------------------------------------------------------- |
+| **名称**     | sim-mem-rs (v0.3.0)                                                                     |
+| **语言**     | Rust (edition 2021, nightly toolchain)                                                  |
+| **目标**     | 面向大模型训练的内存模拟器，使用 DES 评估不同分配策略                                   |
+| **当前阶段** | **Phase 1 已完成** — 引入调度器 (FCFS / Continuous Batching) + LLM 指标 (TTFT/TPOT/JCT) |
+| **代码位置** | `/home/lykspeaking/git/mine/sim-mem-rs`                                                 |
+| **依赖**     | rand, rand_distr, serde, serde_json, clap                                               |
+| **可视化**   | Python 脚本 (`scripts/visualize.py`, 需要 matplotlib)                                   |
 
 ---
 
@@ -35,18 +35,21 @@
 
 ### 模块地图
 
-| 文件 | 职责 | 关键类型 |
-|------|------|---------|
-| `src/lib.rs` | 公共 API，`run_simulation()`, `run_benchmark()` | `SimulationConfig`, `SimulationResult` |
-| `src/engine/mod.rs` | DES 引擎，事件队列，时间推进 | `SimulationEngine`, `Event`, `EventType` |
-| `src/memory/mod.rs` | Allocator trait 定义 | `Allocator`, `MemoryBlock`, `AllocatorStats` |
-| `src/memory/naive.rs` | 首次适应连续分配器 | `NaiveAllocator` |
-| `src/memory/paged.rs` | 固定页大小分配器 | `PagedAllocator` |
-| `src/workload/mod.rs` | 请求生成（指数+正态分布） | `WorkloadGenerator`, `DeterministicWorkloadGenerator` |
-| `src/metrics/mod.rs` | 指标采集 + 性能报告 | `SimulationMetrics`, `PerformanceReport` |
-| `src/main.rs` | CLI（clap derive） | `benchmark`, `simulate` 子命令 |
-| `benches/allocator_benchmarks.rs` | Criterion 微基准 | — |
-| `scripts/visualize.py` | matplotlib 图表生成 | — |
+| 文件                                   | 职责                                                                                                       | 关键类型                                                            |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `src/lib.rs`                           | 公共 API，`run_simulation()`, `run_benchmark()`, `run_simulation_scheduled()`, `run_benchmark_scheduled()` | `SimulationConfig`, `SimulationResult`                              |
+| `src/engine/mod.rs`                    | DES 引擎，事件队列，时间推进；`run_scheduled` 采用 tick-based 调度                                         | `SimulationEngine`, `Event`, `EventType::Tick`                      |
+| `src/memory/mod.rs`                    | Allocator trait 定义                                                                                       | `Allocator`, `MemoryBlock`, `AllocatorStats`                        |
+| `src/memory/naive.rs`                  | 首次适应连续分配器                                                                                         | `NaiveAllocator`                                                    |
+| `src/memory/paged.rs`                  | 固定页大小分配器                                                                                           | `PagedAllocator`                                                    |
+| `src/scheduler/mod.rs`                 | Scheduler trait + 上下文（Phase 1 新增）                                                                   | `Scheduler`, `SchedulerContext`, `ScheduledRequest`, `RequestPhase` |
+| `src/scheduler/fcfs.rs`                | FCFS 静态批处理调度器                                                                                      | `FcfsScheduler`                                                     |
+| `src/scheduler/continuous_batching.rs` | iteration-level 调度器                                                                                     | `ContinuousBatchingScheduler`                                       |
+| `src/workload/mod.rs`                  | 请求生成（指数+正态分布）；Request 含 LLM 字段 prompt_tokens/output_tokens                                 | `WorkloadGenerator`, `Request`                                      |
+| `src/metrics/mod.rs`                   | 指标采集 + 性能报告；包含 TTFT/TPOT/JCT                                                                    | `SimulationMetrics`, `PerformanceReport`, `RequestMetric`           |
+| `src/main.rs`                          | CLI（clap derive）                                                                                         | `benchmark`, `simulate`, `schedule-benchmark`                       |
+| `benches/allocator_benchmarks.rs`      | Criterion 微基准                                                                                           | —                                                                   |
+| `scripts/visualize.py`                 | matplotlib 图表生成                                                                                        | —                                                                   |
 
 ---
 
@@ -120,12 +123,12 @@ cargo check
 
 ## 测试数据逻辑
 
-| 测试类别 | 数量 | 说明 |
-|---------|------|------|
-| 单元测试 | 25 | 每模块独立测试，覆盖创建/分配/释放/合并/碎片计算 |
-| 文档测试 | 7 | lib.rs + 各模块 docstring 中的示例代码 |
-| 基准测试 | 4 | Criterion 微基准（allocate/deallocate） |
-| 集成测试 | 0 | 待添加（`tests/` 目录预留） |
+| 测试类别 | 数量 | 说明                                             |
+| -------- | ---- | ------------------------------------------------ |
+| 单元测试 | 25   | 每模块独立测试，覆盖创建/分配/释放/合并/碎片计算 |
+| 文档测试 | 7    | lib.rs + 各模块 docstring 中的示例代码           |
+| 基准测试 | 4    | Criterion 微基准（allocate/deallocate）          |
+| 集成测试 | 0    | 待添加（`tests/` 目录预留）                      |
 
 测试数据的统计分布逻辑见上方 "工作负载生成"。
 
@@ -142,13 +145,24 @@ cargo check
 
 ## Phase 0 → Phase 1 扩展指南
 
-Phase 1 目标：引入调度器机制（v0.3 — 动态批处理时代）
+Phase 1 目标已完成 — 引入调度器机制 (v0.3 — 动态批处理时代)
+
+已实现的改动：
+1. ✅ 新增 `src/scheduler/mod.rs`：`Scheduler` trait + `FcfsScheduler` + `ContinuousBatchingScheduler`
+2. ✅ 新增 `Engine::run_scheduled()`：tick-based 主循环，维护 Waiting/Running/Preempted 三个队列
+3. ✅ 新增指标：`TTFT`、`TPOT`、`JCT`（含 avg/p99）
+4. ✅ `Request` 扩展 `prompt_tokens` / `output_tokens` 字段
+5. ✅ `MemoryBlock` 仍仅包含 `id/start/size/request_id`；Phase 2 才会引入 logical/physical pages
+
+## Phase 1 → Phase 2 扩展指南
+
+Phase 2 目标：高级内存管理机制（v0.4 — 逼近 vLLM 完全体）
 
 需要的改动：
-1. **新增 `src/scheduler/mod.rs`**：`Scheduler` trait + 实现（`FcfsScheduler`, `ContinuousBatchingScheduler`）
-2. **修改 `engine/mod.rs`**：在 Engine 和 Allocator 之间插入 Scheduler 层，维护 Waiting/Running/Preempted 三个队列
-3. **新增指标**：`TTFT`（首 token 延迟）、`TPOT`（每 token 延迟）、`JCT`（作业完成时间）
-4. **扩展 `MemoryBlock`**：增加 `logical_pages` 和 `physical_pages` 字段为此预留
+1. 抢占机制：`SchedulerContext.preempted` 队列以及 `RequestPhase::Preempted` 已预留
+2. Recomputation vs Swapping 策略（需引入 CpuAllocator）
+3. 逻辑页表 → 物理块映射（完善 PagedAllocator）
+4. 前缀缓存与引用计数（RadixAllocator）
 
 ---
 

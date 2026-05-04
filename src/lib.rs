@@ -1,55 +1,57 @@
 //! # 大模型训练内存模拟器 (sim-mem-rs)
-//! 
+//!
 //! 本项目是一个面向大模型训练的内存模拟器，使用离散事件仿真（DES）技术，
 //! 用于评估不同内存分配策略在大模型训练场景下的性能表现。
-//! 
+//!
 //! ## 项目结构
-//! 
+//!
 //! - `engine`: 离散事件仿真引擎，负责时间推进和事件调度
 //! - `memory`: 内存分配器实现，包括连续分配（Naive）和分页分配（Paged）
 //! - `workload`: 工作负载生成器，模拟大模型训练请求
 //! - `metrics`: 性能指标收集和分析
 //! - `visualization`: 可视化工具，生成性能对比图表
-//! 
+//!
 //! ## 核心概念
-//! 
+//!
 //! ### 离散事件仿真（DES）
 //! 系统状态仅在事件发生时改变，通过事件队列管理时间推进。
-//! 
+//!
 //! ### 内存分配策略
 //! 1. **连续分配（Naive）**: 类似传统内存分配，需要连续内存空间
 //! 2. **分页分配（Paged）**: 将内存划分为固定大小的页，支持非连续分配
-//! 
+//!
 //! ## 使用示例
-//! 
+//!
 //! ```rust
 //! use sim_mem_rs::engine::SimulationEngine;
 //! use sim_mem_rs::memory::{NaiveAllocator, PagedAllocator};
 //! use sim_mem_rs::workload::WorkloadGenerator;
-//! 
+//!
 //! // 创建仿真引擎
 //! let mut engine = SimulationEngine::new(1000); // 1000个时间单位
-//! 
+//!
 //! // 创建内存分配器
 //! let allocator = Box::new(NaiveAllocator::new(1024)); // 1024单位内存
-//! 
+//!
 //! // 生成工作负载
 //! let workload = WorkloadGenerator::new(100, 10, 50);
-//! 
+//!
 //! // 运行仿真
 //! engine.run(allocator, workload);
 //! ```
 
 pub mod engine;
 pub mod memory;
-pub mod workload;
 pub mod metrics;
+pub mod scheduler;
+pub mod workload;
 
 // 重新导出主要类型
 pub use engine::SimulationEngine;
-pub use memory::{Allocator, MemoryBlock, AllocatorStats};
-pub use workload::{WorkloadGenerator, Request};
-pub use metrics::{SimulationMetrics, PerformanceReport};
+pub use memory::{Allocator, AllocatorStats, MemoryBlock};
+pub use metrics::{PerformanceReport, SimulationMetrics};
+pub use scheduler::{ContinuousBatchingScheduler, FcfsScheduler, Scheduler};
+pub use workload::{Request, WorkloadGenerator};
 
 /// 仿真配置
 #[derive(Debug, Clone)]
@@ -97,9 +99,9 @@ pub fn run_simulation(config: SimulationConfig, allocator: Box<dyn Allocator>) -
         config.avg_lifetime,
         config.avg_memory_size,
     );
-    
+
     engine.run(allocator, workload);
-    
+
     SimulationResult {
         allocator_name: engine.allocator_name().to_string(),
         metrics: engine.metrics().clone(),
@@ -113,9 +115,72 @@ pub fn run_benchmark(config: SimulationConfig) -> Vec<SimulationResult> {
         Box::new(memory::NaiveAllocator::new(config.memory_size)),
         Box::new(memory::PagedAllocator::new(config.memory_size, 64)), // 64单位页大小
     ];
-    
+
     allocators
         .into_iter()
         .map(|allocator| run_simulation(config.clone(), allocator))
+        .collect()
+}
+
+/// 运行带调度器的单次仿真（Phase 1）。
+///
+/// # Arguments
+///
+/// * `config` - 仿真配置
+/// * `allocator` - 内存分配器
+/// * `scheduler` - 调度器实现（如 [`FcfsScheduler`]、[`ContinuousBatchingScheduler`]）
+///
+/// # Returns
+///
+/// 包含 LLM 指标（TTFT/TPOT/JCT）的 [`SimulationResult`]。
+pub fn run_simulation_scheduled(
+    config: SimulationConfig,
+    allocator: Box<dyn Allocator>,
+    scheduler: Box<dyn Scheduler>,
+) -> SimulationResult {
+    let mut engine = SimulationEngine::new(config.duration);
+    let workload = WorkloadGenerator::new(
+        config.num_requests,
+        config.avg_lifetime,
+        config.avg_memory_size,
+    );
+    engine.run_scheduled(allocator, scheduler, workload);
+
+    SimulationResult {
+        allocator_name: engine.allocator_name().to_string(),
+        metrics: engine.metrics().clone(),
+        allocator_stats: engine.allocator_stats().clone(),
+    }
+}
+
+/// 运行带调度器的基准对比（Phase 1）。
+///
+/// 对每个 (allocator, scheduler) 组合各跑一次仿真，便于横向比较
+/// FCFS vs Continuous Batching 在不同分配器下的差异。
+pub fn run_benchmark_scheduled(config: SimulationConfig) -> Vec<SimulationResult> {
+    let combos: Vec<(Box<dyn Allocator>, Box<dyn Scheduler>)> = vec![
+        (
+            Box::new(memory::NaiveAllocator::new(config.memory_size)),
+            Box::new(FcfsScheduler::new()),
+        ),
+        (
+            Box::new(memory::NaiveAllocator::new(config.memory_size)),
+            Box::new(ContinuousBatchingScheduler::new()),
+        ),
+        (
+            Box::new(memory::PagedAllocator::new(config.memory_size, 64)),
+            Box::new(FcfsScheduler::new()),
+        ),
+        (
+            Box::new(memory::PagedAllocator::new(config.memory_size, 64)),
+            Box::new(ContinuousBatchingScheduler::new()),
+        ),
+    ];
+
+    combos
+        .into_iter()
+        .map(|(allocator, scheduler)| {
+            run_simulation_scheduled(config.clone(), allocator, scheduler)
+        })
         .collect()
 }
