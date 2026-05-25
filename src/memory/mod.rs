@@ -67,7 +67,7 @@ pub struct AllocatorStats {
 /// 
 /// ```rust,ignore
 /// use sim_mem_rs::memory::{Allocator, MemoryBlock, AllocatorStats};
-/// // see NaiveAllocator or PagedAllocator for full implementations
+// see NaiveAllocator or PagedAllocator for full implementations
 /// ```
 pub trait Allocator {
     /// 分配内存
