@@ -147,6 +147,12 @@ pub struct RequestMetric {
     pub jct: Option<u64>,
 }
 
+impl Default for SimulationMetrics {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl SimulationMetrics {
     /// 创建新的指标收集器
     pub fn new() -> Self {
@@ -405,7 +411,7 @@ pub fn compare_reports(reports: &[PerformanceReport]) -> String {
                 report.avg_jct, report.p99_jct
             ));
         }
-        result.push_str("\n");
+        result.push('\n');
     }
 
     result

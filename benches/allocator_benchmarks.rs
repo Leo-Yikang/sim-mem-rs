@@ -1,11 +1,11 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use sim_mem_rs::memory::{NaiveAllocator, PagedAllocator, Allocator};
+use sim_mem_rs::memory::{Allocator, NaiveAllocator, PagedAllocator};
 
 fn naive_allocator_benchmark(c: &mut Criterion) {
     c.bench_function("naive_allocator_allocate", |b| {
         b.iter(|| {
             let mut allocator = NaiveAllocator::new(1024);
-            for i in 0..100 {
+            for _ in 0..100 {
                 let _ = black_box(allocator.allocate(10));
             }
         })
@@ -16,7 +16,7 @@ fn paged_allocator_benchmark(c: &mut Criterion) {
     c.bench_function("paged_allocator_allocate", |b| {
         b.iter(|| {
             let mut allocator = PagedAllocator::new(1024, 64);
-            for i in 0..100 {
+            for _ in 0..100 {
                 let _ = black_box(allocator.allocate(10));
             }
         })
@@ -28,7 +28,7 @@ fn naive_allocator_deallocate_benchmark(c: &mut Criterion) {
         b.iter(|| {
             let mut allocator = NaiveAllocator::new(1024);
             let mut blocks = Vec::new();
-            for i in 0..100 {
+            for _ in 0..100 {
                 if let Some(block) = allocator.allocate(10) {
                     blocks.push(block);
                 }
@@ -45,7 +45,7 @@ fn paged_allocator_deallocate_benchmark(c: &mut Criterion) {
         b.iter(|| {
             let mut allocator = PagedAllocator::new(1024, 64);
             let mut blocks = Vec::new();
-            for i in 0..100 {
+            for _ in 0..100 {
                 if let Some(block) = allocator.allocate(10) {
                     blocks.push(block);
                 }

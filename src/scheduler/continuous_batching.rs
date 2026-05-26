@@ -147,10 +147,8 @@ impl Scheduler for ContinuousBatchingScheduler {
                     decision.to_prefill.push(id);
                     req.phase = RequestPhase::Decoding;
                 }
-                RequestPhase::Decoding => {
-                    if !req.is_finished() {
-                        decision.to_decode.push(id);
-                    }
+                RequestPhase::Decoding if !req.is_finished() => {
+                    decision.to_decode.push(id);
                 }
                 _ => {}
             }
