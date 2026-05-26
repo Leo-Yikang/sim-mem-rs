@@ -7,7 +7,7 @@
 //! 1. 将内存划分为固定大小的页（page）
 //! 2. 每个请求分配整数个页
 //! 3. 使用位图跟踪页的使用状态
-//! 4. 支持非连续分配，减少外部碎片
+//! 4. 首次适应连续页查找（Phase 2 将支持非连续分配）
 //! 
 //! ## 内部碎片
 //! 
@@ -225,7 +225,7 @@ impl Allocator for PagedAllocator {
     fn deallocate(&mut self, request_id: usize) -> bool {
         self.stats.total_deallocations += 1;
         
-        if let (Some(block), Some(pages)) = (
+        if let (Some(_block), Some(pages)) = (
             self.allocated_blocks.remove(&request_id),
             self.request_pages.remove(&request_id),
         ) {
@@ -350,9 +350,9 @@ mod tests {
         let mut allocator = PagedAllocator::new(1024, 64);
         
         // 分配三个块
-        let block1 = allocator.allocate(100).unwrap();
+        let _block1 = allocator.allocate(100).unwrap();
         let block2 = allocator.allocate(100).unwrap();
-        let block3 = allocator.allocate(100).unwrap();
+        let _block3 = allocator.allocate(100).unwrap();
         
         // 释放中间的块
         allocator.deallocate(block2.request_id);
@@ -367,13 +367,13 @@ mod tests {
         let mut allocator = PagedAllocator::new(1024, 64);
         
         // 分配一个不是页大小整数倍的块
-        let block = allocator.allocate(100).unwrap();
+        let _block = allocator.allocate(100).unwrap();
         
         // 内部fragmentation_ratio应该大于0
         assert!(allocator.fragmentation_ratio() > 0.0);
         
         // 分配页大小整数倍的块
-        let block2 = allocator.allocate(128).unwrap();
+        let _block2 = allocator.allocate(128).unwrap();
         
         // fragmentation_ratio应该降低
         let fragmentation_ratio = allocator.fragmentation_ratio();

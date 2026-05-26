@@ -336,9 +336,9 @@ mod tests {
         assert_eq!(allocator.fragmentation_ratio(), 0.0);
         
         // 分配一些块
-        let block1 = allocator.allocate(100).unwrap();
+        let _block1 = allocator.allocate(100).unwrap();
         let block2 = allocator.allocate(100).unwrap();
-        let block3 = allocator.allocate(100).unwrap();
+        let _block3 = allocator.allocate(100).unwrap();
         
         // 释放中间的块，产生碎片
         allocator.deallocate(block2.request_id);

@@ -14,7 +14,7 @@ use std::path::Path;
 #[derive(Parser)]
 #[command(name = "sim-mem")]
 #[command(about = "大模型训练内存模拟器")]
-#[command(version = "0.2.0")]
+#[command(version = "0.3.0")]
 struct Cli {
     #[command(subcommand)]
     command: Commands,

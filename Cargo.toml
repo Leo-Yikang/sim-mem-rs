@@ -1,6 +1,6 @@
 [package]
 name = "sim-mem-rs"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2021"
 description = "大模型训练内存模拟器 - 离散事件仿真框架"
 authors = ["Your Name <your.email@example.com>"]

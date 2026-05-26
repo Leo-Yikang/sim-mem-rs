@@ -28,7 +28,7 @@ use std::fmt;
 
 use crate::memory::{Allocator, AllocatorStats};
 use crate::metrics::SimulationMetrics;
-use crate::workload::{Request, WorkloadGenerator};
+use crate::workload::WorkloadGenerator;
 
 /// 事件类型
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
@@ -153,7 +153,8 @@ pub struct SimulationEngine {
     active_requests: usize,
     /// 已完成的请求数量
     completed_requests: usize,
-    /// 请求ID计数器
+    /// 请求ID计数器（预留，供调度器使用）
+    #[allow(dead_code)]
     next_request_id: usize,
 }
 
